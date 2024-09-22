@@ -30,8 +30,8 @@ describe('parse-cache', function() {
     // parseCache(Parse, 'MyAppName', { engine: 'redis' });
     parseCache(Parse, 'MyAppName');
 
-    Parse.initialize('3d4CUO16zzTbQ7r2yEV37jKos6upWujuXRpeLflD', 'Uv8uRCZaSfSZ0UhyBsuN6SVxq46NIUnNdXLMMbfI', 'FufEbWLknVnyAzngXSBwv3y2OBusE05M0ZFlhdMb');
-    Parse.serverURL = 'https://parseapi.back4app.com';
+    Parse.initialize('appId', 'javascriptKey', 'masterKey');
+    Parse.serverURL="http://127.0.0.1:1337"
 
     RecordObject = Parse.Object.extend('Record');
 
@@ -48,7 +48,7 @@ describe('parse-cache', function() {
     const Record = new Parse.Query(RecordObject);
     Record.find().then((records) => {
       return Parse.Object.destroyAll(records).then(() => {
-        const promise = parseCache.clearCache(null);
+        const promise = Promise.all([parseCache.clearCache(null)]);
         promise.then(() => {
           done();
         }).catch(done);

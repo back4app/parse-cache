@@ -7,25 +7,26 @@
     "test": "test"
   },
   "dependencies": {
-    "cacheman": "^2.2.1",
+    "cacheman": "^0.1.0",
     "cacheman-memory": "^1.1.0",
-    "cacheman-redis": "^1.1.2",
+    "cacheman-redis": "^2.1.0",
     "jsosort": "0.0.0",
-    "sha1": "^1.1.1"
+    "sha1": "^1.1.1",
+    "util": "^0.12.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babel-loader": "^8.0.4",
-    "eslint": "^4.16.0",
-    "eslint-plugin-mocha": "^4.11.0",
-    "mocha": "^5.2.0",
-    "parse": "^2.1.0",
-    "should": "^13.2.1",
-    "webpack": "^4.22.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "babel-loader": "^9.2.1",
+    "eslint": "^9.11.0",
+    "eslint-plugin-mocha": "^10.5.0",
+    "mocha": "^10.7.3",
+    "parse": "^5.3.0",
+    "should": "^13.2.3",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
