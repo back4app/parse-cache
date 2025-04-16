@@ -25,7 +25,7 @@
     "should": "^13.2.1",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
+    "webpack-dev-server": "^5.2.1",
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
