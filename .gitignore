@@ -29,3 +29,5 @@ node_modules
 
 out
 .idea/
+
+package-lock.json
